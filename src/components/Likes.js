@@ -11,8 +11,8 @@ function Likes({upvotes,downvotes}){
         setDownvote(downvote+1)
     }
     return <div>
-        <button onClick={handleUpvote}>{upvote}</button>
-        <button onClick={handleDownvote}>{downvote}</button>
+        <button onClick={handleUpvote}>{upvote +"👍"}</button>
+        <button onClick={handleDownvote}>{downvote+"👎"}</button>
     </div>
 }
 
