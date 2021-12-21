@@ -1,5 +1,6 @@
 import video from "../data/video.js";
-import Info from "./Info.js"
+import Info from "./Info.js";
+import Likes from "./Likes.js";
 
 function App() {
   console.log("Here's your data:", video);
@@ -15,6 +16,7 @@ function App() {
         title="Thinking in React"
       />
       <Info views={video.views} uploaded={video.createdAt}/>
+      <Likes upvotes={video.upvotes} downvotes={video.downvotes}/>
     </div>
   );
 }
